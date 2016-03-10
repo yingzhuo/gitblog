@@ -9,7 +9,7 @@
 ```
 su
 cd /etc/apt
-mv sources.list sources.list.backup
+mv sources.list sources.list.ori
 wget http://mirrors.163.com/.help/sources.list.trusty
 mv sources.list.trusty sources.list
 exit
