@@ -29,7 +29,11 @@ ps -e | grep ssh
 
 ##### 2.1 允许/禁止`root`账户登录
 
-在`/etc/ssh/sshd_config`中找到配置项`PermitRootLogin`，调整其值为`yes`或`no`即可。
+在`/etc/ssh/sshd_config`中找到配置项`PermitRootLogin`，调整其值为`yes`或`no`即可。如:
+
+```
+PermitRootLogin no
+```
 
 ##### 2.2 设置远程登录时的Banner
 
