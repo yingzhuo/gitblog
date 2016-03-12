@@ -2,7 +2,8 @@
 ---
 本着“好好学习，天天向上”的态度，特意开通此博客，用于记录学习心得和学习笔记。
 
-**本博客[源码](https://github.com/yingzhuo/gitblog)托管于[github.com](https://github.com)**
+* **本博客[源码](https://github.com/yingzhuo/gitblog)托管于[github.com](https://github.com)**
+* **本博客[阅读](https://yingzhuo.gitbooks.io/gitblog/content/)于[gitbook.com](https://www.gitbook.com)**
 
 许可证
 ---
