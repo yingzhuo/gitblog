@@ -7,4 +7,5 @@
    * [SVN](operation-and-maintenance/svn.md)
    * [Java](operation-and-maintenance/java.md)
    * [Git](operation-and-maintenance/git.md)
+   * Gradle
 
