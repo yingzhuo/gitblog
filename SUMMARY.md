@@ -8,5 +8,5 @@
    * [Java](operation-and-maintenance/java.md)
    * [Git](operation-and-maintenance/git.md)
    * [Gradle](operation-and-maintenance/gradle.md)
-   * Maven
+   * [Maven](operation-and-maintenance/maven.md)
 
