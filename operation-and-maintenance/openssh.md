@@ -43,4 +43,20 @@ PermitRootLogin no
 Banner /etc/issue.net
 ```
 
+##### 2.3 配置免密码登录
+
+首先生成服务器端的公钥和私有
+
+```bash
+ssh-keygen
+```
+
+
+检查服务端是否有`~/.ssh/authorized_keys`文件，如果没有创建一个。
+复制客户端公钥到此文件即可。如:
+
+```
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDc/oAITBcHEVmoB9+qjsXLduucjAZ6qiROGrc7e/7tdXwM8vJjX06Frr4NrNVyb5Fm5opGjOnS7cKnz5EmqgBdS0pLptpyCH7N/ZgLRJCE6PhJGWrNg0HOp6FF4k9YLBgNEUIFoFfM90DVubta5WGehVDfF4awkIigN9Xxo2n+Wxdf0T1LIPdUh3U5IULiSgnLEmTImY9TlJbyetDscKMhNH7AzsneHv8T2Rl2nPSRtJiNrzPEbrtu7vcDDzeF1xW8lvx/kMK5MRBCGCQewLcbUp627hs4GL8CxbB1etR76UShuXTOFG0jwge5y3gnNnRnjreSVkw051u2cTCOBxXP yingzhuo@mac15.local
+```
+
 **注意：**修改配置之后需重启服务
