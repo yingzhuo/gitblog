@@ -6,5 +6,5 @@
    * [OpenSSH](operation-and-maintenance/openssh.md)
    * [SVN](operation-and-maintenance/svn.md)
    * [Java](operation-and-maintenance/java.md)
-   * Git
+   * [Git](operation-and-maintenance/git.md)
 
