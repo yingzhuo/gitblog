@@ -9,6 +9,7 @@
    * [Git](operation-and-maintenance/git.md)
    * [Gradle](operation-and-maintenance/gradle.md)
    * [Maven](operation-and-maintenance/maven.md)
+   * Groovy
 * [Linux](linux/README.md)
    * [cookbook](linux/cookbook.md)
 
