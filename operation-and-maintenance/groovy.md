@@ -9,7 +9,7 @@
 #### 3. 配置
 
 ```
-export GROOVY_HOME=/usr/local/groovy-2.4.5
+export GROOVY_HOME=/usr/local/groovy-2.4.6
 export PATH=$PATH:$GROOVY_HOME/bin
 ```
 
