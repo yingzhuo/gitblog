@@ -6,10 +6,10 @@
    * [OpenSSH](operation-and-maintenance/openssh.md)
    * [SVN](operation-and-maintenance/svn.md)
    * [Java](operation-and-maintenance/java.md)
+   * [Groovy](operation-and-maintenance/groovy.md)
    * [Git](operation-and-maintenance/git.md)
    * [Gradle](operation-and-maintenance/gradle.md)
    * [Maven](operation-and-maintenance/maven.md)
-   * [Groovy](operation-and-maintenance/groovy.md)
 * [Linux](linux/README.md)
    * [cookbook](linux/cookbook.md)
 
