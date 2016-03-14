@@ -60,3 +60,7 @@ ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQDc/oAITBcHEVmoB9+qjsXLduucjAZ6qiROGrc7e/7t
 ```
 
 **注意：**修改配置之后需重启服务
+
+#### 3. 参考资料
+
+* [OpenSSH官方网站](http://www.openssh.com/)
