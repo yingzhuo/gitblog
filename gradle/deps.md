@@ -8,6 +8,11 @@ dependencies {
 
     // groovy
     compile 'org.codehaus.groovy:groovy-all:2.4.6'
+    
+    // kotlin
+    test 'org.jetbrains.kotlin:kotlin-test:1.0.0'
+    compile 'org.jetbrains.kotlin:kotlin-stdlib:1.0.0'
+    compile 'org.jetbrains.kotlin:kotlin-reflect:1.0.0'
 
     // spring-boot
     testCompile 'org.springframework.boot:spring-boot-starter-test:1.3.3.RELEASE'
@@ -53,9 +58,10 @@ dependencies {
     compile 'org.hibernate:hibernate-validator:5.2.4.Final'
 
     // jetbrick-template
-    compile 'com.github.subchen:jetbrick-template:2.1.0'
-    compile 'com.github.subchen:jetbrick-commons:2.1.0'
-    compile 'com.github.subchen:jetbrick-template-web:2.1.0'
+    compile 'com.github.subchen:jetbrick-commons:2.1.1'
+    compile 'com.github.subchen:jetbrick-template:2.1.1'
+    compile 'com.github.subchen:jetbrick-template-web:2.1.1'
+    compile 'com.github.subchen:jetbrick-template-springmvc:2.1.1'
     compile 'org.antlr:antlr4-runtime:4.5.1'
 
     // jdbc
