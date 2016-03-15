@@ -33,7 +33,7 @@ sudo apt-get upgrade
 # 升级系统
 sudo apt-get dist-upgrade
 
-# 了解使用该包依赖那些包
+# 查看使用该包依赖那些包
 apt-cache depends {package}
 
 # 查看该包被哪些包依赖
