@@ -14,5 +14,5 @@
    * [cookbook](linux/cookbook.md)
    * [apt-get](linux/apt-get.md)
 * [gradle](gradle/README.md)
-   * 常用依赖
+   * [常用依赖](gradle/deps.md)
 
