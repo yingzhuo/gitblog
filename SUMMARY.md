@@ -13,6 +13,7 @@
 * [Linux](linux/README.md)
    * [cookbook](linux/cookbook.md)
    * [apt-get](linux/apt-get.md)
+   * tee
 * [gradle](gradle/README.md)
    * [常用依赖](gradle/deps.md)
 
