@@ -14,6 +14,7 @@
    * [cookbook](linux/cookbook.md)
    * [apt-get](linux/apt-get.md)
    * [tee](linux/tee.md)
+   * wget
 * [gradle](gradle/README.md)
    * [常用依赖](gradle/deps.md)
 
