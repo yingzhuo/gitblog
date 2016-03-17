@@ -22,8 +22,8 @@ fi
 SERVICE_NAME=spring-mini
 PATH_TO_JAR=/home/yingzhuo/spring-mini/spring-mini.jar
 PID_PATH_NAME=/home/yingzhuo/spring-mini/spring-mini.pid
-STD_LOG=/home/yingzhuo/spring-mini/spring-mini.ok.log
-ERR_LOG=/home/yingzhuo/spring-mini/spring-mini.ng.log
+STD_LOG=/home/yingzhuo/spring-mini/spring-mini.std.log
+ERR_LOG=/home/yingzhuo/spring-mini/spring-mini.err.log
 
 case $1 in
     start)
@@ -64,3 +64,6 @@ case $1 in
     ;;
 esac
 ```
+
+把此脚本放入`/etc/init.d`即可 使用 `sudo /etc/init.d/spring-mini start`开启。<br>
+`update-rc.d spring-mini defaults`叫如开机启动。
