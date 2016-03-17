@@ -15,6 +15,7 @@
    * [apt-get](linux/apt-get.md)
    * [tee](linux/tee.md)
    * [wget](linux/wget.md)
+   * nohub
 * [gradle](gradle/README.md)
    * [常用依赖](gradle/deps.md)
 
