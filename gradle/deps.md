@@ -1,6 +1,5 @@
 # 常用依赖
 
-
 ```groovy
 dependencies {
     // tool
@@ -8,7 +7,7 @@ dependencies {
 
     // groovy
     compile 'org.codehaus.groovy:groovy-all:2.4.6'
-    
+
     // kotlin
     test 'org.jetbrains.kotlin:kotlin-test:1.0.0'
     compile 'org.jetbrains.kotlin:kotlin-stdlib:1.0.0'
@@ -47,13 +46,13 @@ dependencies {
     compile 'org.springframework:spring-webmvc:4.2.5.RELEASE'
     compile 'org.springframework:spring-oxm:4.2.5.RELEASE'
     compile 'org.springframework:spring-jms:4.2.5.RELEASE'
-    
+
     // shiro
     compile 'org.apache.shiro:shiro-core:1.2.4'
     compile 'org.apache.shiro:shiro-web:1.2.4'
     compile 'org.apache.shiro:shiro-ehcache:1.2.4'
     compile 'org.apache.shiro:shiro-spring:1.2.4'
-    
+
     // hibernate-validator
     compile 'org.hibernate:hibernate-validator:5.2.4.Final'
 
