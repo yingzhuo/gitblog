@@ -11,3 +11,56 @@ else
     exit 0
 fi
 ```
+
+#### Jar文件如何作为系统服务运行
+
+必须要一个包装器如下:
+
+```bash
+#!/bin/sh
+
+SERVICE_NAME=spring-mini
+PATH_TO_JAR=/home/yingzhuo/spring-mini/spring-mini.jar
+PID_PATH_NAME=/home/yingzhuo/spring-mini/spring-mini.pid
+STD_LOG=/home/yingzhuo/spring-mini/spring-mini.ok.log
+ERR_LOG=/home/yingzhuo/spring-mini/spring-mini.ng.log
+
+case $1 in
+    start)
+        echo "Starting $SERVICE_NAME ..."
+        if [ ! -f $PID_PATH_NAME ]; then
+            nohup java -jar -Djava.security.egd=file:/dev/./urandom $PATH_TO_JAR 1> $STD_LOG 2> $ERR_LOG &
+            echo $! > $PID_PATH_NAME
+            echo "$SERVICE_NAME started ..."
+        else
+            echo "$SERVICE_NAME is already running ..."
+        fi
+    ;;
+    stop)
+        if [ -f $PID_PATH_NAME ]; then
+            PID=$(cat $PID_PATH_NAME);
+            echo "$SERVICE_NAME stoping ..."
+            kill $PID;
+            echo "$SERVICE_NAME stopped ..."
+            rm $PID_PATH_NAME
+        else
+            echo "$SERVICE_NAME is not running ..."
+        fi
+    ;;
+    restart)
+        if [ -f $PID_PATH_NAME ]; then
+            PID=$(cat $PID_PATH_NAME);
+            echo "$SERVICE_NAME stopping ...";
+            kill $PID;
+            echo "$SERVICE_NAME stopped ...";
+            rm $PID_PATH_NAME
+            echo "$SERVICE_NAME starting ..."
+            nohup java -jar -Djava.security.egd=file:/dev/./urandom $PATH_TO_JAR  1> $STD_LOG 2> $ERR_LOG &
+            echo $! > $PID_PATH_NAME
+            echo "$SERVICE_NAME started ..."
+        else
+            echo "$SERVICE_NAME is not running ..."
+        fi
+    ;;
+esac
+```
