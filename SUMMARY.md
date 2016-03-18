@@ -17,6 +17,8 @@
    * [wget](linux/wget.md)
    * [nohup](linux/nohup.md)
 * [gradle](gradle/README.md)
+   * [cookbook](gradle/cookbook.md)
+   * [我的gradle配置参考](gradle/my-templates.md)
    * [常用依赖](gradle/deps.md)
 * [java](java/README.md)
    * [spring-boot's jar 启动脚本](java/spring-boot-bash.md)
