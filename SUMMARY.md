@@ -16,6 +16,7 @@
    * [tee](linux/tee.md)
    * [wget](linux/wget.md)
    * [nohup](linux/nohup.md)
+   * [zip & unzip](linux/zip-and-unzip.md)
 * [gradle](gradle/README.md)
    * [cookbook](gradle/cookbook.md)
    * [我的gradle配置参考](gradle/my-templates.md)
