@@ -63,7 +63,7 @@ subprojects {
     }
 
     dependencies {
-        optional 'org.codehaus.groovy:groovy-all:2.4.5'
+        optional 'org.codehaus.groovy:groovy-all:2.4.6'
         optional 'org.springframework.boot:spring-boot-configuration-processor:1.3.3.RELEASE'
     }
 
