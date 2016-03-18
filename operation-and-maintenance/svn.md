@@ -94,8 +94,10 @@ svnserve -d -r /application/svndata/ --pid-file=/application/svndata/svn.pid
 新建repository
 
 ```
-svnadmin create sadoc
+svnadmin create /application/svndata/sadoc
 ```
+
+**注意:** 为了方便管理，新建repository时，要注意指定路径。
 
 编辑`/application/svndata/sadoc/conf/svnserve.cnf`
 
