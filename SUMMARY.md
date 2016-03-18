@@ -18,3 +18,5 @@
    * [nohup](linux/nohup.md)
 * [gradle](gradle/README.md)
    * [常用依赖](gradle/deps.md)
+* [java](java/README.md)
+   * [spring-boot's jar 启动脚本](java/spring-boot-bash.md)
