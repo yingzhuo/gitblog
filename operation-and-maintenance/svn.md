@@ -110,9 +110,7 @@ authz-db = /application/svnpasswd/authz # 指定授权文件位置
 
 #### 3. 钩子
 
-常用`pre-commit`钩子
-
-如：
+##### 3.1 `pre-commit`钩子例：
 
 ```bash
 #!/usr/bin/env bash
@@ -218,4 +216,67 @@ done
 
 #All checks passed, so allow the commit.
 exit 0
+```
+
+##### 3.2 `post-commit`钩子例：
+
+```bash
+#!/bin/sh
+# POST-COMMIT HOOK
+#
+# The post-commit hook is invoked after a commit.  Subversion runs
+# this hook by invoking a program (script, executable, binary, etc.)
+# named 'post-commit' (for which this file is a template) with the
+# following ordered arguments:
+#
+#   [1] REPOS-PATH   (the path to this repository)
+#   [2] REV          (the number of the revision just committed)
+#   [3] TXN-NAME     (the name of the transaction that has become REV)
+#
+# The default working directory for the invocation is undefined, so
+# the program should set one explicitly if it cares.
+#
+# Because the commit has already completed and cannot be undone,
+# the exit code of the hook program is ignored.  The hook program
+# can use the 'svnlook' utility to help it examine the
+# newly-committed tree.
+#
+# On a Unix system, the normal procedure is to have 'post-commit'
+# invoke other programs to do the real work, though it may do the
+# work itself too.
+#
+# Note that 'post-commit' must be executable by the user(s) who will
+# invoke it (typically the user httpd runs as), and that user must
+# have filesystem-level permission to access the repository.
+#
+# On a Windows system, you should name the hook program
+# 'post-commit.bat' or 'post-commit.exe',
+# but the basic idea is the same.
+#
+# The hook program typically does not inherit the environment of
+# its parent process.  For example, a common problem is for the
+# PATH environment variable to not be set to its usual value, so
+# that subprograms fail to launch unless invoked via absolute path.
+# If you're having unexpected problems with a hook program, the
+# culprit may be unusual (or missing) environment variables.
+#
+# Here is an example hook script, for a Unix /bin/sh interpreter.
+# For more examples and pre-written hooks, see those in
+# /usr/share/subversion/hook-scripts, and in the repository at
+# http://svn.apache.org/repos/asf/subversion/trunk/tools/hook-scripts/ and
+# http://svn.apache.org/repos/asf/subversion/trunk/contrib/hook-scripts/
+
+
+REPOS="$1"
+REV="$2"
+TXN_NAME="$3"
+
+SVN=/usr/bin/svn
+SVN_URL=svn://127.0.0.1/spring-mini
+MVN=/usr/local/maven_home/bin/mvn
+
+export JAVA_HOME=/usr/local/java8_home
+
+$SVN checkout $SVN_URL /tmp/spring-mini/ --username=manager --password=manager
+$MVN -f /tmp/spring-mini/pom.xml package
 ```
