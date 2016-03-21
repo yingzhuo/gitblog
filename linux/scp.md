@@ -11,8 +11,12 @@
 
 ```bash
 scp ./logs.zip yingzhuo@10.211.55.13:/tmp
+```
 
-PASSWORD=****
+在脚本中scp往往配合`excpet`命令使用，如下，但需要注意的是，密码会已明文的方式暴露，慎用。
+
+```
+PASSWORD=123456
 
 expect -c "
 	spawn scp -r avatar.jpeg root@127.0.0.1:/tmp/
