@@ -20,6 +20,7 @@
    * [find](linux/find.md)
    * [scp](linux/scp.md)
    * [crontab](linux/crontab.md)
+   * [ntpdate](linux/ntpdate.md)
 * [gradle](gradle/README.md)
    * [cookbook](gradle/cookbook.md)
    * [我的gradle配置参考](gradle/my-templates.md)
