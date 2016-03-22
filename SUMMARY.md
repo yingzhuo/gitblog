@@ -17,6 +17,7 @@
    * [wget](linux/wget.md)
    * [nohup](linux/nohup.md)
    * [zip & unzip](linux/zip-and-unzip.md)
+   * [tar][linux/tar.md]
    * [find](linux/find.md)
    * [scp](linux/scp.md)
    * [crontab](linux/crontab.md)
