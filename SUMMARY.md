@@ -21,6 +21,7 @@
    * [find](linux/find.md)
    * [scp](linux/scp.md)
    * [crontab](linux/crontab.md)
+   * [wc](linux/wc.md)
    * [ntpdate](linux/ntpdate.md)
 * [gradle](gradle/README.md)
    * [cookbook](gradle/cookbook.md)
