@@ -10,6 +10,7 @@
    * [Git](operation-and-maintenance/git.md)
    * [Gradle](operation-and-maintenance/gradle.md)
    * [Maven](operation-and-maintenance/maven.md)
+   * [MySQL](operation-and-maintenance/mysql.md)
 * [Linux](linux/README.md)
    * [cookbook](linux/cookbook.md)
    * [apt-get](linux/apt-get.md)
