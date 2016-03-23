@@ -4,7 +4,7 @@
 * [运维](operation-and-maintenance/README.md)
    * [软件源](operation-and-maintenance/software-sources-settings.md)
    * [OpenSSH](operation-and-maintenance/openssh.md)
-   * [SVN](operation-and-maintenance/svn.md)
+   * [OpenSVN](operation-and-maintenance/opensvn.md)
    * [Java](operation-and-maintenance/java.md)
    * [Groovy](operation-and-maintenance/groovy.md)
    * [Git](operation-and-maintenance/git.md)
