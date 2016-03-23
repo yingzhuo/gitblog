@@ -1,4 +1,4 @@
-# SpringBoot Jar启动脚本
+# SpringBootJar如何比较好管理
 
 下面的脚本，以名为`spring-mini`的项目为例。
 
@@ -11,7 +11,7 @@
 ################################################################################
 
 DIR=/home/yingzhuo/projects/spring-mini
-JAR_FILE=$DIR/spring-mini.jar
+JAR_FILE=$DIR/lnk.jar
 PID_FILE=$DIR/pid
 STD_LOG=$DIR/spring-mini.log.std
 ERR_LOG=$DIR/spring-mini.log.err
@@ -24,8 +24,6 @@ function stop {
 
         if [ $? -eq 0 ]; then
             echo "[OK] Stopped."
-        else
-            echo "[NG] Cannot stop."
         fi
     fi
 }
@@ -36,8 +34,24 @@ function start {
     echo "[OK] Started."
 }
 
+function relink {
+    rm -rf $DIR/lnk.jar 2> /dev/null
+    find $DIR -regex '^.*-[0-9]*\.jar$' -type f | sort | tail -n 1 | xargs -I {} sh -c 'ln -s "$1" lnk.jar' - {}
+    echo "[OK] Relinked."
+}
+
+function autoremove {
+    count=$(find $DIR -regex '^.*-[0-9]*\.jar$' | wc -l)
+
+    if [ "$count" -gt 1 ]
+    then
+        find $IDR -regex '^.*-[0-9]*\.jar$' -type f | sort | sed -e '$ d' | xargs rm -rf 2>/dev/null
+        echo "[OK] Autoremoved."
+    fi
+}
+
 function help {
-    echo "[NG] Parameter: start | stop | restart"
+    echo "[NG] Parameter: start | stop | restart | relink | autoremove | all"
 }
 
 case $1 in
@@ -50,6 +64,18 @@ case $1 in
     restart )
         stop
         start
+        ;;
+    relink )
+        relink
+        ;;
+    autoremove )
+        autoremove
+        ;;
+    all )
+        stop
+        relink
+        start
+        autoremove
         ;;
     * )
         help
