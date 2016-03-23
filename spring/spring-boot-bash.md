@@ -1,11 +1,11 @@
 # SpringBootJar如何比较好管理
 
-下面的脚本，以名为`spring-mini`的项目为例。
+下面的脚本名为`man.sh`用来管理名为`spring-mini`的项目
 
 ```bash
 #!/usr/bin/env bash
 ################################################################################
-# 功能: 管理spring-boot's jar文件的启动或停止等
+# 功能: 管理spring-mini项目
 # 作者: 应卓
 # 日期: 2016-03-18
 ################################################################################
@@ -35,8 +35,9 @@ function start {
 }
 
 function relink {
-    rm -rf $DIR/lnk.jar 2> /dev/null
-    find $DIR -regex '^.*-[0-9]*\.jar$' -type f | sort | tail -n 1 | xargs -I {} sh -c 'ln -s "$1" lnk.jar' - {}
+    target=$(find $DIR -regex '^.*-[0-9]*\.jar$' -type f | sort | tail -n 1)
+    rm -rf $JAR_FILE 2> /dev/null
+    ln -s $target $JAR_FILE
     echo "[OK] Relinked."
 }
 
@@ -51,7 +52,7 @@ function autoremove {
 }
 
 function help {
-    echo "[NG] Parameter: start | stop | restart | relink | autoremove | all"
+    echo "Parameter: start | stop | restart | relink | autoremove | all"
 }
 
 case $1 in
@@ -82,4 +83,17 @@ case $1 in
 esac
 
 exit 0
+```
+
+```
+yingzhuo@ubuntu:~/projects$ tree -a spring-mini/
+spring-mini/
+├── lnk.jar -> /home/yingzhuo/projects/spring-mini/spring-mini-20160323100133.jar
+├── man.sh
+├── pid
+├── spring-mini-20160323100133.jar
+├── spring-mini.log.err
+└── spring-mini.log.std
+
+0 directories, 6 files
 ```

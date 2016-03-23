@@ -27,4 +27,4 @@
    * [我的gradle配置参考](gradle/my-templates.md)
    * [常用依赖](gradle/deps.md)
 * [Spring](spring/README.md)
-   * [spring-boot-jar启动](java/spring-boot-bash.md)
+   * [spring-boot-jar启动](spring/spring-boot-bash.md)
