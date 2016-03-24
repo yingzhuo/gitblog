@@ -24,6 +24,7 @@
    * [crontab](linux/crontab.md)
    * [wc](linux/wc.md)
    * [ntpdate](linux/ntpdate.md)
+   * [hostname](linux/hostname.md)
 * [gradle](gradle/README.md)
    * [cookbook](gradle/cookbook.md)
    * [我的gradle配置参考](gradle/my-templates.md)
