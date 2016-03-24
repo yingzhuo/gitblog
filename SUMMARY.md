@@ -5,6 +5,7 @@
    * [软件源](operation-and-maintenance/software-sources-settings.md)
    * [OpenSSH](operation-and-maintenance/openssh.md)
    * [OpenSVN](operation-and-maintenance/opensvn.md)
+   * [OpenVPN](operation-and-maintenance/openvpn.md)
    * [Java](operation-and-maintenance/java.md)
    * [Groovy](operation-and-maintenance/groovy.md)
    * [Git](operation-and-maintenance/git.md)
