@@ -1,4 +1,4 @@
-# SpringBootJar如何比较好管理
+# SpringBootJar启动脚本
 
 下面的脚本名为`man.sh`用来管理名为`spring-mini`的项目
 

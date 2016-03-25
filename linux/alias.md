@@ -74,6 +74,7 @@ alias shutdown='sudo /sbin/shutdown'
 alias type='type -a'
 alias pwd='pwd -P'
 
+alias q='exit'
 alias quit='exit'
 
 if [ $EUID -ne 0 ]
