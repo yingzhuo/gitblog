@@ -15,6 +15,7 @@
 * [Linux](linux/README.md)
    * [cookbook](linux/cookbook.md)
    * [apt-get](linux/apt-get.md)
+   * [alias](linux/alias.md)
    * [tee](linux/tee.md)
    * [wget](linux/wget.md)
    * [nohup](linux/nohup.md)
