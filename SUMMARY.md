@@ -25,6 +25,7 @@
    * [scp](linux/scp.md)
    * [crontab](linux/crontab.md)
    * [wc](linux/wc.md)
+   * [tr](linux/tr.md)
    * [ntpdate](linux/ntpdate.md)
    * [hostname](linux/hostname.md)
 * [gradle](gradle/README.md)
