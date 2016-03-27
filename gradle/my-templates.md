@@ -19,8 +19,12 @@ buildscript {
     }
     dependencies {
         classpath 'org.springframework.build.gradle:propdeps-plugin:0.0.7'
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.0.1'
         classpath 'org.springframework.boot:spring-boot-gradle-plugin:1.3.3.RELEASE'
     }
+}
+
+ext {
 }
 
 allprojects {
@@ -44,6 +48,7 @@ subprojects {
     apply plugin: 'propdeps-maven'
     apply plugin: 'propdeps-idea'
     apply plugin: 'propdeps-eclipse'
+    apply plugin: 'spring-boot'
 
     sourceCompatibility = 1.8
     targetCompatibility = 1.8

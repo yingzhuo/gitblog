@@ -9,9 +9,10 @@ dependencies {
     compile 'org.codehaus.groovy:groovy-all:2.4.6'
 
     // kotlin
-    test 'org.jetbrains.kotlin:kotlin-test:1.0.0'
-    compile 'org.jetbrains.kotlin:kotlin-stdlib:1.0.0'
-    compile 'org.jetbrains.kotlin:kotlin-reflect:1.0.0'
+    testCompile 'org.jetbrains.kotlin:kotlin-test:1.0.1'
+    compile 'org.jetbrains.kotlin:kotlin-runtime:1.0.1'
+    compile 'org.jetbrains.kotlin:kotlin-stdlib:1.0.1'
+    compile 'org.jetbrains.kotlin:kotlin-reflect:1.0.1'
 
     // spring-boot
     testCompile 'org.springframework.boot:spring-boot-starter-test:1.3.3.RELEASE'
