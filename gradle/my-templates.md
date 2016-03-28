@@ -42,6 +42,7 @@ allprojects {
 subprojects {
     apply plugin: 'java'
     apply plugin: 'groovy'
+    apply plugin: 'kotlin'
     apply plugin: 'idea'
     apply plugin: 'maven'
     apply plugin: 'propdeps'
