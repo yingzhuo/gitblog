@@ -33,6 +33,7 @@
    * [我的gradle配置参考](gradle/my-templates.md)
    * [常用依赖](gradle/deps.md)
 * [Spring](spring/README.md)
+   * [spring-boot配置参考](spring/spring-boot-cnfs.md)
    * [spring-boot应用管理脚本](spring/spring-boot-bash.md)
    * [spring-boot发布war包](spring/spring-boot-deployable-war.md)
    * [spring-boot配置错误页面](spring/spring-boot-error-page.md)
