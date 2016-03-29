@@ -35,3 +35,4 @@
 * [Spring](spring/README.md)
    * [spring-boot应用管理脚本](spring/spring-boot-bash.md)
    * [spring-boot发布war包](spring/spring-boot-deployable-war.md)
+   * [spring-boot配置错误页面](spring/spring-boot-error-page.md)
