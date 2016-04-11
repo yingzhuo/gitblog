@@ -10,12 +10,12 @@ spring.main.banner-mode=off
 # server
 server.error.path=/error
 
-# logging
-logging.pattern.console=%d{yyyy-MM-dd HH:mm:ss.SSS,GMT+8} [%thread] %-5level %logger{72}[%L] - %msg%n
-logging.level.=info
-logging.level.com.mycompany.myproject=debug
-logging.level.org.hibernate=warn
-logging.level.org.springframework=warn
+# logging (日志文件采用logback-spring.xml配置)
+#logging.pattern.console=%d{yyyy-MM-dd HH:mm:ss.SSS,GMT+8} [%thread] %-5level %logger{72}[%L] - %msg%n
+#logging.level.=info
+#logging.level.com.mycompany.myproject=debug
+#logging.level.org.hibernate=warn
+#logging.level.org.springframework=warn
 
 # jackson
 spring.jackson.time-zone=GMT+8

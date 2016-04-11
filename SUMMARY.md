@@ -6,6 +6,7 @@
    * [OpenSSH](operation-and-maintenance/openssh.md)
    * [OpenSVN](operation-and-maintenance/opensvn.md)
    * [OpenVPN](operation-and-maintenance/openvpn.md)
+   * [OpenLDAP](operation-and-maintenance/openldap.md)
    * [Java](operation-and-maintenance/java.md)
    * [Groovy](operation-and-maintenance/groovy.md)
    * [Git](operation-and-maintenance/git.md)
@@ -38,3 +39,4 @@
    * [spring-boot发布war包](spring/spring-boot-deployable-war.md)
    * [spring-boot配置错误页面](spring/spring-boot-error-page.md)
    * [spring-boot配置servlet或filter](spring/spring-boot-config-filter-or-servlet.md)
+   * [spring-boot配置logback](spring/spring-boot-logback.md)
