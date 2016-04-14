@@ -42,3 +42,4 @@
    * [spring-boot配置logback](spring/spring-boot-logback.md)
 * [Kotlin](kotlin/README.md)
    * [Lambda表达式与FunctionalInterface之间的转换](kotlin/functional-interface-and-lambda.md)
+   * [对象代理](kotlin/class-delegation.md)
