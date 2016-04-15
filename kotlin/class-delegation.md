@@ -1,4 +1,4 @@
-# 对象代码
+# 对象代理
 
 ```kotlin
 interface MyInterface {
