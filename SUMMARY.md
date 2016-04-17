@@ -30,6 +30,8 @@
    * [tr](linux/tr.md)
    * [ntpdate](linux/ntpdate.md)
    * [hostname](linux/hostname.md)
+* [macos](macos/README.md)
+   * [port forwarding](macos/port-forwarding.md)
 * [gradle](gradle/README.md)
    * [cookbook](gradle/cookbook.md)
    * [我的gradle配置参考](gradle/my-templates.md)
