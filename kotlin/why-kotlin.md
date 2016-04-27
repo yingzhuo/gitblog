@@ -103,4 +103,66 @@ object MySingleton {
 
 ##### 4.5 装饰器
 
-// TODO
+下面的代码完整展示了，了一个装饰器的写法。`Kotlin`实现一个装饰器，比`Java`要生出许多代码。
+
+```
+interface Worker {
+    fun doWork1()
+    fun doWork2()
+    fun doWork3()
+    fun doWork4()
+}
+
+class WorkerImpl : Worker {
+    override fun doWork1() {
+        println("do work-1")
+    }
+
+    override fun doWork2() {
+        println("do work-2")
+    }
+
+    override fun doWork3() {
+        println("do work-3")
+    }
+
+    override fun doWork4() {
+        println("do work-4")
+    }
+}
+
+class WorkerWrapper(val inner: Worker, val lambda: () -> Unit) : Worker by inner {
+
+    override fun doWork1() {
+        lambda.invoke()
+        inner.doWork1()
+    }
+}
+
+fun main(args: Array<String>) {
+    val worker = WorkerImpl()
+    val wrapper = WorkerWrapper(worker, { println("在doWork1()之前,打印一下") })
+    wrapper.doWork1()
+    wrapper.doWork2()
+    wrapper.doWork3()
+    wrapper.doWork4()
+}
+```
+
+#### 4.6 为已有类型添加方法
+
+有了这个语法特性会很方便，如若不然`XxxUtils.method()`这样的代码到处都是，虽然说也没什么不好，但总不如`Kotlin`简单明了。
+
+```Kotlin
+fun String.repeat(n: Int): String {
+    var s = ""
+    for (i in 1..n) {
+        s += this
+    }
+    return s
+}
+
+fun main(args: Array<String>) {
+    print("123".repeat(2))
+}
+```
