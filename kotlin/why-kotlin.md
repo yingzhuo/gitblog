@@ -149,7 +149,7 @@ fun main(args: Array<String>) {
 }
 ```
 
-#### 4.6 为已有类型添加方法
+##### 4.6 为已有类型添加方法
 
 有了这个语法特性会很方便，如若不然`XxxUtils.method()`这样的代码到处都是，虽然说也没什么不好，但总不如`Kotlin`简单明了。
 
@@ -166,3 +166,7 @@ fun main(args: Array<String>) {
     print("123".repeat(2))
 }
 ```
+
+##### 4.7 不在区分`CheckedException`与`UncheckedException`
+
+`Java`区分两种异常，带来了巨大争议，但是`Kotlin`不做区分，我更喜欢这样。
