@@ -45,7 +45,7 @@ Banner /etc/issue.net
 
 ##### 2.3 配置免密码登录
 
-首先生成服务器端的公钥和私有
+首先生成服务器端的公钥和私钥
 
 ```bash
 ssh-keygen
