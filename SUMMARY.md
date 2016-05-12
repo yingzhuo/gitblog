@@ -33,6 +33,7 @@
    * [tr](linux/tr.md)
    * [ntpdate](linux/ntpdate.md)
    * [hostname](linux/hostname.md)
+   * [sed](linux/sed.md)
    * [awk](linux/awk.md)
 * [macos](macos/README.md)
    * [port forwarding](macos/port-forwarding.md)
