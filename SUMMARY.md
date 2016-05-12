@@ -1,6 +1,8 @@
 # 目录
 
 * [介绍](README.md)
+* [工作技巧](skill/README.md)
+   * [github下载单个文件](skill/github-download-file.md)
 * [运维](operation-and-maintenance/README.md)
    * [软件源](operation-and-maintenance/software-sources-settings.md)
    * [OpenSSH](operation-and-maintenance/openssh.md)
