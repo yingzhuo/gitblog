@@ -170,3 +170,13 @@ fun main(args: Array<String>) {
 ##### 4.7 不在区分`CheckedException`与`UncheckedException`
 
 `Java`区分两种异常，带来了巨大争议，但是`Kotlin`不做区分，我更喜欢这样。
+
+##### 4.8 更强的类型推导
+
+```Java
+User user = new User()  // "User"这个单词出现两次，完全没有必要
+```
+
+```Kotlin
+var user = User()       // 干净清爽
+```
