@@ -3,8 +3,11 @@
 #### 安装
 
 ```bash
-curl -sSL https://get.docker.com/ | bash
-sudo usermod -aG docker yingzhuo
+# 通过远程脚本安装
+curl -sSL https://get.daocloud.io/docker | sh
+
+# 添加用户组使得非root用户可不通过sudo指令使用docker
+sudo usermod -aG docker <username>
 ```
 
 #### 重启
@@ -12,6 +15,15 @@ sudo usermod -aG docker yingzhuo
 ```bash
 service docker stop
 service docker start
+```
+
+#### 配置国内镜像
+
+[DaoCloud](https://dashboard.daocloud.io/mirror)
+
+```
+echo "DOCKER_OPTS=\"\$DOCKER_OPTS --registry-mirror=http://39be60bf.m.daocloud.io\"" | sudo tee -a /etc/default/docker
+sudo service docker restart
 ```
 
 #### 重启脚本
@@ -29,15 +41,8 @@ if [[ $EUID -ne 0 ]]; then
     exit 1
 fi
 
-# Parallels Desktop bug，DNS无法解析 'https://registry-1.docker.io/'
-# 添加此行， 强制使用谷歌免费DNS
-# 需翻墙
-
-echo "nameserver 8.8.8.8" > /etc/resolv.conf
 /etc/init.d/docker stop  >/dev/null 2>&1
 /etc/init.d/docker start >/dev/null 2>&1
 
 exit 0
 ```
-
-**Note :** 本脚本可加入 "/etc/rc.local"，这样每次开机都会重启`Docker`。
