@@ -1,5 +1,33 @@
 # SpringBoot配置logback
 
+#### 0. 杂项技巧
+
+我的常用配置:
+
+```properties
+logging.pattern.console=%clr(%d{yyyy-MM-dd HH:mm:ss.SSS,GMT+8} [%thread] %-5level %logger{72}[%L] - %msg%n)
+logging.level.root=warn
+logging.level.com.github.yingzhuo.cheliangbao=trace
+logging.level.org.springframework=warn
+logging.level.org.hibernate=warn
+```
+
+可以指定日志输出的颜色
+
+```properties
+%clr(%d{yyyy-MM-dd HH:mm:ss.SSS}){yellow}
+```
+
+被支持的颜色有: <br>
+
+`blue`
+`cyan`
+`faint`
+`green`
+`magenta`
+`red`
+`yellow`
+
 #### 1. `logback-spring.xml` 可以细化配置`profile`
 
 ```xml
